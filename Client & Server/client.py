@@ -1,3 +1,4 @@
+
 from socket import *
 
 serverName = "127.0.0.1"
@@ -11,4 +12,4 @@ clientSocket.send(sentence.encode())
 filecontents = clientSocket.recv(1024).decode()
 print ('From Server:', filecontents)
 
-clientSocket.close
+clientSocket.close()
